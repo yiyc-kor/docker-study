@@ -1,5 +1,19 @@
 # docker-study
 
+## Summary: How to use docker
+```
+docker run -it --name server centos /bin/bash
+ctrl + p,q
+docker ps
+docker exec -it server /bin/bash
+ctrl + p,q
+docker stop server
+docker ps -a
+docker start server
+docker exec -it server /bin/bash
+
+```
+
 ## Start making image
 
 ```
