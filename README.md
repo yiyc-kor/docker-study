@@ -1,8 +1,18 @@
 # docker-study
 
-## Summary: How to use docker
+## Summary: How to use docker (Web Service)
+
+### Make DB docker
+Mysql
 ```
-docker run -it --name server centos /bin/bash
+docker run --name [NAME] -e MYSQL_ROOT_PASSWORD=[ROOT_PASSWORD] -d\
+	-p [HOST_PORT]:[GUEST_PORT] -v [HOST_PATH]:[GUEST_PATH] mysql:[VERSION]
+```
+
+
+```
+docker search centos					# Also can search in Docker Hub
+docker run -it --name [NAME] -d -v [HOST_PATH]:[GUEST_PATH] centos:[VERSION] --link [DB_DOCK_NAME]:[NICKNAME] /bin/bash	# access to DB using [NICKNAME] for url
 ctrl + p,q
 docker ps
 docker exec -it server /bin/bash
@@ -36,4 +46,6 @@ Docker image save&load&export&import
 
 https://www.leafcats.com/240
 
+Docker How to
 
+http://pyrasis.com/Docker/Docker-HOWTO
