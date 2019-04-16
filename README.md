@@ -1,6 +1,36 @@
 # docker-study
 
-## Summary: How to use docker (Web Service)
+## Simple summary
+
+Check all container
+
+```
+docker ps -a
+```
+
+Start container
+```
+docker start [CONTAINER_NAME]
+```
+
+delete containter
+```
+docker rm [CONTAINER_NAME]
+```
+
+Make container
+```
+docker run -it --name [CONTAINER_NAME] -d -v [HOST_PATH]:[GUEST_PATH] --link [DB_DOCK_NAME]:[NICKNAME] centos:[VERSION] /bin/bash
+
+```
+
+Exec container
+```
+docker exec -it tbot-web /bin/bash
+```
+
+
+## How to make docker for web service
 
 ### Make DB docker
 Mysql
@@ -17,7 +47,7 @@ docker run --name db -e MYSQL_ROOT_PASSWORD=db123 -d -p 33066:3306 -v C:\shared:
 
 ```
 docker search centos					# Also can search in Docker Hub
-docker run -it --name [NAME] -d -v [HOST_PATH]:[GUEST_PATH] [DB_DOCK_NAME]:[NICKNAME] centos:[VERSION] --link /bin/bash	# access to DB using [NICKNAME] for url
+docker run -it --name [NAME] -d -v [HOST_PATH]:[GUEST_PATH] [DB_DOCK_NAME]:[NICKNAME] --link centos:[VERSION] /bin/bash	# access to DB using [NICKNAME] for url
 ctrl + p,q
 docker ps
 docker exec -it server /bin/bash
