@@ -29,6 +29,20 @@ Exec container
 docker exec -it tbot-web /bin/bash
 ```
 
+Commit container
+```
+docker commit -a [AUTHER] -m [MESSAGE] [CONTAINTER_NAME] [IMAGE_NAME]:[TAG]
+```
+
+Check images
+```
+docker images
+```
+
+Delete Docker image
+```
+docker rmi [IMAGE_NAME]
+```
 
 ## How to make docker for web service
 
