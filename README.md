@@ -96,14 +96,20 @@ docker run -p 73306:3306 --name db-server centos:7
 
 ## Readings
 
-begin docker
+* begin docker
 
 https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html
 
-Docker image save&load&export&import
+* Docker image save&load&export&import
 
 https://www.leafcats.com/240
 
-Docker How to
+* Docker How to
 
 http://pyrasis.com/Docker/Docker-HOWTO
+
+* Nvdia Docker
+
+https://ko-kr.facebook.com/notes/%EC%8B%A0%ED%98%84%EA%B0%91/1nvidia-docker-%EA%B8%B0%EB%B0%98-tensorflow-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/1187222141322502/
+
+http://haanjack.github.io/docker/2017/12/01/nvidia-docker-ngc.html
