@@ -77,6 +77,12 @@ cf)
 docker run -it --name web -d -v C:shared:/data --link db:db -p 8080:8080 -p 8000:8000 ubuntu:18.04 /bin/bash
 ```
 
+### Use Jupyter Notebook
+
+```
+$ docker run -p 8888:8888 -v %cd%:/home/jovyan/work/ --name jupyter_notebook jupyter/datascience-notebook:python-3.7.6
+```
+
 
 ### Notes
 
